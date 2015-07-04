@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+user = User.find_by(id: 1)
+
+Friend.delete_all
+
+Friend.create(name: 'Erika', phone_number: '07525005484', user_id: user.id)
+
+puts 'Seeded'
