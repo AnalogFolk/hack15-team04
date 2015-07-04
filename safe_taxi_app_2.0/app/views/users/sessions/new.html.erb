@@ -24,3 +24,68 @@
 <% end %>
 
 <%= render "users/shared/links" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+ 
+ </head>
+<body style="background-color: #e63f34 ;">
+   <div class="content">
+       <div class="icon-item text--center">
+           <a href="https://www.uber.com/">
+               <i class="icon icon_uber
+                       push-large--top push-huge--bottom
+">
+               </i>
+           </a>
+
+       </div>
+
+        <div style="z-index:99" class="circular"><img src="images/justin1.jpg" alt="" /></div>
+
+
+        <div style = 'background-image: url(images/justin1.jpg)'></div>
+
+     <div id="fb-root"></div>
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '277064115737714',
+         xfbml      : false,
+         version    : 'v2.2'  // good until Oct-2016
+       });
+       if (window.asyncUberFacebook) {
+         window.asyncUberFacebook();
+       }
+     };
+
+     (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = '//connect.facebook.net/en_US/sdk.js';
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+ <p class="title background-line push-small--top">
+   <span>Sign In</span>
+ </p>
+ <form method="post" class="form" novalidate>
+   <input type="hidden" name="_csrf_token" value="1436010912-01-T1KCzguYEMaUMPVvT40GCzgRMs_EQ8SSFDtevDZL6ws=">
+   <input type="hidden" data-js="access-token" name="access_token" />
+     <a href="#" class="btn btn--full btn--facebook push-tiny--top" data-js="facebook-connect">
+         <span class="push-huge--left flush">Connect with Facebook</span>
+     </a>
+     <p class="background-line push-large--top">
+       <span>or use email</span>
+   </p>
+
+
+</body>
+</html>
