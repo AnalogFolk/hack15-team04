@@ -1,16 +1,21 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.1'
 
 gem 'rails-api'
 
 gem 'spring', :group => :development
 
+gem 'pg'
 
-gem 'mysql2'
+gem 'thin'
 
+gem 'uber_login'
 
+group :development, :test do
+  gem 'rails-pry'
+  gem 'pry'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
